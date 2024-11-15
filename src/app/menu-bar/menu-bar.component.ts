@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-bar.component.scss']
 })
 export class MenuBarComponent {
-
+title = 'Dawid W. Mika'
+subtitle = 'Sound Designer'
 }

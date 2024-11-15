@@ -1,0 +1,53 @@
+@import "src/styles";
+
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0px 0 30px 0;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  background-color: $dark-green;
+
+  h2 {
+    display: flex;
+    text-align: center;
+    @include font-title();
+    margin: 10px 0 20px 10px;
+  }
+
+  p {
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+    @include font-subtitle();
+  }
+}
+
+.burger-menu{
+  @media (min-width: 1080px) {
+    display: none;
+  }
+  align-items: left;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.desktop-menu{
+  display: flex;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  @media (max-width: 1080px) {
+    display: none;
+  }
+  @include font-menu();
+
+  a{
+    margin: 0px 0 0 10px;
+  }
+}
