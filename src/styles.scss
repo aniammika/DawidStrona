@@ -71,9 +71,9 @@ $light-grey: #F5F5F5;
 
 @mixin font-content() {
   font-family: 'PlatNomor';
-  font-size: 14px; /* for mobile */
+  font-size: 18px; /* for mobile */
   @media (min-width: 1080px) {
-      font-size: 16x; /* for desktop */
+      font-size: 20x; /* for desktop */
   }
   color: $light-grey;
 }

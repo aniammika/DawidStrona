@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./content-container.component.scss']
 })
 export class ContentContainerComponent {
-
+youtubeVideoId = 'b1YOAJcTZn0'
 }

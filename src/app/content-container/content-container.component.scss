@@ -1,0 +1,21 @@
+@import "src/styles";
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-container{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: center;
+  p {
+    @include font-content();
+  }
+}
+
+youtube-player{
+  margin: 20px 0 0 0;
+}
