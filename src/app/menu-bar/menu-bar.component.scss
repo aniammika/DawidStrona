@@ -49,5 +49,6 @@
 
   a{
     margin: 0px 0 0 10px;
+    @include font-menu();
   }
 }
