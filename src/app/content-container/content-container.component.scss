@@ -1,12 +1,30 @@
 @import "src/styles";
 
+.content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $grey;
+  color: $light-grey;
+  width: 100%;
+}
+
+.inner-content-container{
+  width: 360px;
+
+  @media (min-width: 1080px) {
+    width: 720px;
+  }
+}
+
 .about-me-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px 0 0 0;
 }
 
-.about-me-container{
+.about-me-container {
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -15,7 +33,35 @@
     @include font-content();
   }
 }
+h2 {
+  @include font-subtitle();
+  text-transform: uppercase;
+  text-align: center;
+}
 
-youtube-player{
-  margin: 20px 0 0 0;
+.game-tile-container {
+  display: inline;
+}
+
+.game-tile {
+  margin: 10px;
+  height: 350px;
+  width: 310px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  transition: transform 1s linear;
+}
+.game-tile:hover{
+  border-color: pink;
+  transform: scale(1.1);
+}
+span{
+  @include font-content();
+}
+span a{
+  @include font-content();
+  text-decoration: none;
+}
+span a:hover {
+  color: pink;
 }

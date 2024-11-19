@@ -78,6 +78,16 @@ $light-grey: #F5F5F5;
   color: $light-grey;
 }
 
+@mixin font-footer() {
+  font-family: 'PlatNomor';
+  font-size: 14px; /* for mobile */
+  font-style: italic;
+  @media (min-width: 1080px) {
+      font-size: 16px; /* for desktop */
+  }
+  color: $light-grey;
+}
+
 @font-face {
   font-family: 'PlatNomor';
   src: url('assets/fonts/PlatNomor.ttf') format('truetype');

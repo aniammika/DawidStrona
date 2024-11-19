@@ -1,12 +1,38 @@
-<div id="home" class="about-me-section">
-  <div class="video-section">
-<youtube-player videoId={{youtubeVideoId}}></youtube-player>
+<div class="content-container">
+  <div class="inner-content-container">
+    <div id="home" class="about-me-section">
+      <div class="video-section">
+        <youtube-player videoId="{{ youtubeVideoId }}"></youtube-player>
+      </div>
+      <div class="about-me-container">
+        <p>
+          Hello, I'm Dawid W. Mika. I'm a sound designer with over 10 years of
+          experience in creating interactive audio for video games - from
+          concept, through recording, editing, middleware implementation to game
+          engine system creation and mixing.
+        </p>
+        <p>Currently I'm working as Lead Sound Designer at Flying Wild Hog.</p>
+      </div>
+    </div>
+    <div id="portfolio" class="portfolio-section">
+      <h2>important projects</h2>
+      <ul class="games">
+        <li class="game-tile-container" *ngFor="let game of games">
+          <img class="game-tile" [src]="getImageUrl(game)" [alt]="game.Name" />
+        </li>
+      </ul>
+    </div>
+    <div id="credits" class="credits-section">
+      <h2>credits</h2>
+      <ul class="credits-container" *ngFor="let credit of credits">
+        <li class="credit-point">
+          <span><a [href]="credit.url">{{credit.name}}</a></span>
+          <span>{{credit.description}}</span>
+          <span><b>{{credit.description_bold}}</b></span>
+
+        </li>
+      </ul>
+    </div>
+    <div id="contact" class="contact-section"></div>
+  </div>
 </div>
-<div class="about-me-container">
-  <p>Hello, I'm Dawid W. Mika. I'm a sound designer with over 10 years of experience in creating interactive audio for video games - from concept, through recording, editing, middleware implementation to game engine system creation and mixing.</p>
-  <p>Currently I'm working as Lead Sound Designer at Flying Wild Hog.</p>
-</div>
-</div>
-<div id="portfolio" class="portfolio-section"></div>
-<div id="credits" class="credits-section"></div>
-<div id="contact" class="contact-section"></div>

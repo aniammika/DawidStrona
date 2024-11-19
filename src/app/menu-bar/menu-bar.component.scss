@@ -1,5 +1,16 @@
 @import "src/styles";
 
+.menu-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: $dark-green;
+  z-index: 1000;
+}
 
 .title-container {
   display: flex;
@@ -7,16 +18,13 @@
   justify-content: space-between;
   text-align: center;
   margin: 0px 0 30px 0;
-  position: fixed;
-  left: 20px;
-  top: 20px;
   background-color: $dark-green;
 
   h2 {
     display: flex;
     text-align: center;
     @include font-title();
-    margin: 10px 0 20px 10px;
+    margin: 20px 0 10px 20px;
   }
 
   p {
@@ -27,7 +35,21 @@
   }
 }
 
-.burger-menu{
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin: 30px 0 0 40px;;
+}
+i{
+  color: $light-grey;
+  margin: 10px;
+}
+i:hover{
+  color: pink;
+}
+
+.burger-menu {
   @media (min-width: 1080px) {
     display: none;
   }
@@ -37,18 +59,23 @@
   top: 20px;
 }
 
-.desktop-menu{
+.desktop-menu {
   display: flex;
   position: fixed;
   right: 20px;
   top: 20px;
+
   @media (max-width: 1080px) {
     display: none;
   }
   @include font-menu();
-
-  a{
+  a {
     margin: 0px 0 0 10px;
+    text-decoration: none;
     @include font-menu();
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: pink;
   }
 }
