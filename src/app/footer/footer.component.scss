@@ -1,0 +1,13 @@
+@import "src/styles";
+
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: $dark-green;
+  align-items: center
+}
+p{
+  @include font-footer();
+  text-align: center;
+}

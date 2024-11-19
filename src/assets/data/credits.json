@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Evil West",
+    "url": "https://flyingwildhog.com/games/evil-west-2/",
+    "description": " (PS5, XSX, PS4, XO, PC) - Flying Wild Hog, 2022",
+    "description_bold": " // sound design"
+  },
+  {
+    "name": "Shadow Warrior 3",
+    "url": "https://shadowwarrior.com/",
+    "description": " (PS4, XO, PC) - Flying Wild Hog, 2022",
+    "description_bold": " // sound design"
+  },
+  {
+    "name": "Gord",
+    "url": "https://gord.game/",
+    "description": " (PS5, XSX, PC) - Covenant.dev, 2023",
+    "description_bold": " // sound design"
+  },
+  {
+    "name": "Steel Rats",
+    "url": "http://steelratsgame.com/",
+    "description": " (PS4, XO, PC) - Tate Multimedia, 2018",
+    "description_bold": " // sound design"
+  },
+  {
+    "name": "Last Oasis",
+    "url": "https://store.steampowered.com/app/903950/Last_Oasis/",
+    "description": " (XO, PC) - Donkey Crew, 2020",
+    "description_bold": " // sound design (creatures)"
+  },
+  {
+    "name": "Urban Trial Tricky",
+    "url": "https://urbantrialtricky.com/",
+    "description": " (NS) - Tate Multimedia, 2020",
+    "description_bold": " // sound design"
+  },
+  {
+    "name": "ElectroRide",
+    "url": "https://www.facebook.com/ElectroRide/",
+    "description": " (PC, NS) - Sylwester Osik, 2020",
+    "description_bold": " // sound design"
+  },
+  {
+    "name": "Trancelation",
+    "url": "http://www.mythicowl.com/trancelation/",
+    "description": " (PC) - Mythic Owl, 2019",
+    "description_bold": " // sound design"
+  },
+  {
+    "name": "Angry John",
+    "url": "http://angryjohngame.com/",
+    "description": " (PC) - Low Poly Wolf, cancelled",
+    "description_bold": " // sound design, music"
+  },
+  {
+    "name": "Horrifying Human Hunter",
+    "url": "http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=16352/",
+    "description": " (PC) - Noktorats, cancelled ",
+    "description_bold": " // sound design, music"
+  },
+  {
+    "name": "Soccer Hit",
+    "url": "http://www.digitalmelody.eu/games/SoccerHit/",
+    "description": " (Mobile) - Digital Melody, 2016",
+    "description_bold": " // music"
+  },
+  {
+    "name": "Surfingers",
+    "url": "http://www.digitalmelody.eu/games/Surfingers/",
+    "description": " (Mobile) - Digital Melody, 2016",
+    "description_bold": " // additional music"
+  },
+  {
+    "name": "Fly O'Clock",
+    "url": "http://www.digitalmelody.eu/games/FlyOClock/",
+    "description": " (Mobile) - Digital Melody, 2016",
+    "description_bold": " // sound design, music"
+  },
+  {
+    "name": "On_Release()",
+    "url": "http://www.rinsewashrepeat.co.uk/on-release/",
+    "description": " (PC) - Rinse Wash Repeat, 2015",
+    "description_bold": " // sound design, music"
+  },
+  {
+    "name": "Surtr",
+    "url": "http://simonengelbrecht.dk/gallery/surtr/",
+    "description": " (PC) - Simon Engelbrecht, 2014",
+    "description_bold": " // sound design, music"
+  }
+]
