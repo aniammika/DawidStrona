@@ -1,0 +1,22 @@
+<div class="game-details-container">
+<div class="close-button-container">
+  <i class="fa-solid fa-x" (click)="closeButtonClicked()"></i>
+</div>
+<h2>{{ game.name }}</h2>
+<div class="game-description-container">
+  <p>{{ game.description }}</p>
+  <span>
+    Role: <b>{{ game.role }}</b>
+  </span>
+  <span>
+    Production year: <b>{{ game.prodYear }}</b>
+  </span>
+</div>
+<div class="youtube-player-container">
+  <youtube-player
+    [width]="200"
+    [height]="100"
+    videoId="{{ game.youTubeId }}"
+  ></youtube-player>
+</div>
+</div>

@@ -64,26 +64,37 @@ $light-grey: #F5F5F5;
   font-family: 'PlatNomor';
   font-size: 22px; /* for mobile */
   @media (min-width: 1080px) {
-      font-size: 24x; /* for desktop */
+      font-size: 24px; /* for desktop */
   }
   color: $light-grey;
 }
 
 @mixin font-content() {
-  font-family: 'PlatNomor';
+  font-family: "Open Sans", sans-serif;
   font-size: 18px; /* for mobile */
+  letter-spacing: 0.5px;
   @media (min-width: 1080px) {
       font-size: 20x; /* for desktop */
   }
   color: $light-grey;
 }
 
-@mixin font-footer() {
-  font-family: 'PlatNomor';
+@mixin font-content-small() {
+  font-family: "Open Sans", sans-serif;
   font-size: 14px; /* for mobile */
-  font-style: italic;
+  letter-spacing: 0.5px;
   @media (min-width: 1080px) {
       font-size: 16px; /* for desktop */
+  }
+  color: $light-grey;
+}
+
+@mixin font-footer() {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px; /* for mobile */
+  font-style: italic;
+  @media (min-width: 1080px) {
+      font-size: 12px; /* for desktop */
   }
   color: $light-grey;
 }

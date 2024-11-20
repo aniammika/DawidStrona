@@ -3,6 +3,8 @@
     "id": 1,
     "name": "Evil West",
     "prodYear": "2022",
+    "description": "Evil West is a 2022 third-person shooter game developed by Flying Wild Hog and published by Focus Entertainment. The game was released for PlayStation 4, PlayStation 5, Windows, Xbox One and Xbox Series X/S on 22 November 2022.",
+    "role": "Lead sound designer",
     "imageName": "evil-west-1",
     "youTubeId": "CjgXmYeQxxU"
   },
@@ -10,6 +12,8 @@
     "id": 2,
     "name": "SHADOW WARRIOR 3",
     "prodYear": "2022",
+    "description": "Shadow Warrior 3 is a 2022 first-person shooter game developed by Flying Wild Hog and published by Devolver Digital. The sequel to Shadow Warrior 2 (2016), the game was released for PlayStation 4, Windows, and Xbox One on 1 March 2022. It was later released for PlayStation 5 and Xbox Series X/S on 16 February 2023.",
+    "role": "Lead sound designer",
     "imageName": "shadow-warrior-3",
     "youTubeId": "3UAAsM8B2eU"
   },
@@ -17,6 +21,8 @@
     "id": 3,
     "name": "STEEL RATS",
     "prodYear": "2018",
+    "description": "Steel Rats is a 2.5D dynamic, vehicular combat action platformer game.",
+    "role": "Sound designer",
     "imageName": "steel-rats",
     "youTubeId": "AX6Q0IMXyv0"
   },
@@ -24,6 +30,8 @@
     "id": 4,
     "name": "GORD",
     "prodYear": "2023",
+    "description": "Gord is a single-player adventure strategy. To survive, you must build, but to prevail, you must conquer the darkness beyond the gates. In this dark fantasy world, you must complete quests while managing a populace whose personal stories and well-being decide the fate of your tribe.",
+    "role": "Sound designer",
     "imageName": "gord",
     "youTubeId": "we0x3XFcddQ"
   },
@@ -31,6 +39,8 @@
     "id": 5,
     "name": "LAST OASIS",
     "prodYear": "2020",
+    "description": "Last Oasis is a Nomadic Survival MMO. Earth has stopped rotating, and the last human survivors live in a small strip of habitable space between scorching sun and frozen waste, constantly on the move through the massive Open World in search of precious resources.",
+    "role": "Sound designer",
     "imageName": "last-oasis",
     "youTubeId": ""
   }

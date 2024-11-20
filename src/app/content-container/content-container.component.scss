@@ -1,7 +1,9 @@
 @import "src/styles";
 
-.content-container{
+.content-container {
   display: flex;
+  position: absolute;
+  top: 100px;
   flex-direction: column;
   align-items: center;
   background-color: $grey;
@@ -9,7 +11,7 @@
   width: 100%;
 }
 
-.inner-content-container{
+.inner-content-container {
   width: 360px;
 
   @media (min-width: 1080px) {
@@ -17,7 +19,7 @@
   }
 }
 
-.about-me-section {
+.home-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,15 +28,40 @@
 
 .about-me-container {
   display: flex;
-  flex-direction: column;
-  width: 400px;
+  flex-direction: row;
   text-align: center;
-  p {
-    @include font-content();
+  margin: 20px;
+
+  @media (min-width: 1080px) {
+    //for desktop
+    margin: 20px 40px 20px 40px;
+  }
+}
+
+.about-me-container p {
+  @include font-content();
+}
+
+.about-me-container img {
+  width: 40%;
+  height: 350px;
+  margin-left: 10px;
+}
+
+.about-me-text-container {
+  margin: 0 20px 0 20px;
+  width: 60%;
+}
+
+.content-section {
+  margin: 20px 0 20px 0;
+
+  @media (min-width: 1080px) {
+    margin: 60px 0 40px 0;
   }
 }
 h2 {
-  @include font-subtitle();
+  @include font-menu();
   text-transform: uppercase;
   text-align: center;
 }
@@ -49,16 +76,29 @@ h2 {
   width: 310px;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
-  transition: transform 1s linear;
+  transition: transform 0.2s linear;
 }
-.game-tile:hover{
+.game-tile:hover {
   border-color: pink;
   transform: scale(1.1);
 }
-span{
+
+.window__container {
+  display: flex;
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  width: 450px;
+  height: 450px;
+  z-index: 10000;
+  background: $dark-green;
+  border: 5px solid pink;
+}
+
+span {
   @include font-content();
 }
-span a{
+span a {
   @include font-content();
   text-decoration: none;
 }
