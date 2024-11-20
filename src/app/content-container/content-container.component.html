@@ -1,38 +1,57 @@
 <div class="content-container">
   <div class="inner-content-container">
-    <div id="home" class="about-me-section">
-      <div class="video-section">
-        <youtube-player videoId="{{ youtubeVideoId }}"></youtube-player>
-      </div>
+    <div id="home" class="home-section">
       <div class="about-me-container">
-        <p>
-          Hello, I'm Dawid W. Mika. I'm a sound designer with over 10 years of
-          experience in creating interactive audio for video games - from
-          concept, through recording, editing, middleware implementation to game
-          engine system creation and mixing.
-        </p>
-        <p>Currently I'm working as Lead Sound Designer at Flying Wild Hog.</p>
+        <img src="assets/images/dawid_portret.jpg" alt="portret" />
+        <div class="about-me-text-container">
+          <p>Hello, I'm Dawid W. Mika.</p>
+          <p>
+            I'm a sound designer with over 10 years of experience in creating
+            interactive audio for video games - from concept, through recording,
+            editing, middleware implementation to game engine system creation
+            and mixing.
+          </p>
+          <p>
+            Currently I'm working as Lead Sound Designer at Flying Wild Hog.
+          </p>
+        </div>
       </div>
     </div>
-    <div id="portfolio" class="portfolio-section">
+    <div id="portfolio" class="content-section">
       <h2>important projects</h2>
       <ul class="games">
         <li class="game-tile-container" *ngFor="let game of games">
-          <img class="game-tile" [src]="getImageUrl(game)" [alt]="game.Name" />
+          <img
+            class="game-tile"
+            [src]="getImageUrl(game)"
+            (click)="openPopUpOnClick(game)"
+            [alt]="game.Name"
+          />
         </li>
       </ul>
+      <div *ngIf="openPopUp" class="window__container">
+        <app-game-tile-popup
+          [game]="currentGame"
+          (close)="closePopUp()"
+        ></app-game-tile-popup>
+      </div>
     </div>
-    <div id="credits" class="credits-section">
+    <div id="credits" class="content-section">
       <h2>credits</h2>
       <ul class="credits-container" *ngFor="let credit of credits">
         <li class="credit-point">
-          <span><a [href]="credit.url">{{credit.name}}</a></span>
-          <span>{{credit.description}}</span>
-          <span><b>{{credit.description_bold}}</b></span>
-
+          <span
+            ><a [href]="credit.url">{{ credit.name }}</a></span
+          >
+          <span>{{ credit.description }}</span>
+          <span
+            ><b>{{ credit.description_bold }}</b></span
+          >
         </li>
       </ul>
+      <div class="video-section">
+        <youtube-player videoId="{{ youtubeVideoId }}"></youtube-player>
+      </div>
     </div>
-    <div id="contact" class="contact-section"></div>
   </div>
 </div>

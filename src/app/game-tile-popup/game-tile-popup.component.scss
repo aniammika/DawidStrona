@@ -1,0 +1,43 @@
+@import "src/styles";
+
+.game-details-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button-container{
+  background-color: $light-grey;
+  margin-left: auto;
+}
+
+i{
+  margin: 10px;
+  color: $grey;
+}
+
+.game-description-container{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+h2{
+  @include font-subtitle();
+  color: $light-grey;
+  margin: 20px 0 0px 30px;
+}
+
+p{
+  @include font-content-small();
+  color: $light-grey;
+  margin: 10px 0 20px 10px;
+}
+span{
+  @include font-content-small();
+  color: $light-grey;
+  margin: 10px 0 10px 10px;
+}
+
+.youtube-player-container{
+  align-self: center;
+}

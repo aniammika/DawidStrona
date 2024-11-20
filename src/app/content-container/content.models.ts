@@ -2,6 +2,8 @@ interface IGame {
   id: number;
   name: string;
   prodYear: string;
+  description: string;
+  role: string;
   imageName: string;
   youTubeId: string;
 }
